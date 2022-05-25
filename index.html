@@ -32,22 +32,9 @@
                     <div v-for="(slide, i) in slides"
                     class="thumb"
                     :class="i === activeSlide ? 'active' : '' "
-                    @click="clickSlide"
                     :key="i">
                         <img v-bind:src="slide.image" :alt="slide.title" :key="i" @click="clickSlide(i)"/>
                     </div>
-                    <!-- <div class="thumb">
-                        <img src="img/02.jpg" alt="Svizzera" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/03.jpg" alt="Gran Bretagna" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/04.jpg" alt="Germania" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/05.jpg" alt="Paradise" />
-                    </div> -->
                 </div>
 
             </div>

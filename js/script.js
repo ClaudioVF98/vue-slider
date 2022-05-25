@@ -42,13 +42,13 @@ const myApp = new Vue({
             if(this.activeSlide < 0){
                 this.activeSlide = this.slides.length -1;
             }
-        },
-        
-        clickSlide(activeSlide){
+        },        
+        clickSlide(activeSlide) {
             this.activeSlide = activeSlide;
         }
-    }
+    },
 });
+
 
 // length
 
